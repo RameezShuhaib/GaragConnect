@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Material Design for Bootstrap</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Mobile support -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Material Design fonts -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  
+  
+  <!-- Bootstrap Material Design -->
+  <link href="dist/css/bootstrap-material-design.css" rel="stylesheet">
+  <link href="dist/css/ripples.min.css" rel="stylesheet">
+
+    
+  <!--  CSS By Rameez  -->
+  <link href="css/rameez.css" rel="stylesheet">
+
+  <!-- Dropdown.js -->
+  <link href="//cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.css" rel="stylesheet">
+
+  <!-- Page style -->
+  <link href="index.css" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+      <span id="mbutton" class="navbar-brand glyphicon glyphicon-menu-hamburger" ></span>
+    </div>
+        
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+        <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
+        <li><a href="track.html"><span class="glyphicon glyphicon-cog"></span>Track Order</a></li>
+        <li><a href="message.html"><span class="glyphicon glyphicon-envelope"></span>Messages</a></li>
+        <li><a href="setting.html"><span class="glyphicon glyphicon-cog"></span>Account Setting</a></li>
+      </ul>
+            
+            
+      <ul class="nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+      </ul>
+    </div>
+        
+</div>
+    
+    
+    <nav class="col-xs-3 menu leftbar hide">
+        <div class="row mtitle">
+            <h1>SERVICES<span class="glyphicon glyphicon-chevron-left"></span></h1>
+        </div>
+        <div class="panel-group">
+            <div class="panel panel-default">
+            <div id="1" class="panel-heading">
+              <h4 id="1" class="panel-title">
+                Mechanical Problems<span id="1" class="glyphicon glyphicon-plus plus"></span>
+                </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse">
+              <ul class="list-group">
+                <li class="list-group-item">One</li>
+                <li class="list-group-item">Two</li>
+                <li class="list-group-item">Three</li>
+              </ul>
+            </div>
+            </div>
+            <div class="panel panel-default">
+            <div id="2" class="panel-heading">
+              <h4 id="2" class="panel-title">
+                Electrical Problems<span id="2" class="glyphicon glyphicon-plus plus"></span>
+              </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+              <ul class="list-group">
+                <li class="list-group-item">One</li>
+                <li class="list-group-item">Two</li>
+                <li class="list-group-item">Three</li>
+              </ul>
+            </div>
+            </div>
+            
+            <div class="panel panel-default">
+            <div id="3" class="panel-heading">
+              <h4 id="3" class="panel-title">
+                Monthly Treatment<span id="2" class="glyphicon glyphicon-plus plus"></span>
+              </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+              <ul class="list-group">
+                <li class="list-group-item">One</li>
+                <li class="list-group-item">Two</li>
+                <li class="list-group-item">Three</li>
+              </ul>
+            </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container-fluid main">
+        
+    </div>
+    
+    
+    
+<script>
+
+
+$("nav").on("click", function(e){
+
+    $("#collapse"+e.target.id).toggleClass("collapse");
+    
+    $('.panel .panel-heading[id="'+e.target.id+'"] span').toggleClass("glyphicon glyphicon-plus glyphicon glyphicon-minus");
+
+});
+
+$(".navbar #mbutton").on("click", function(){
+    $("nav.menu").toggleClass("hide display");
+});
+    
+$(".mtitle span").on("click", function(){
+    $("nav.menu").toggleClass("hide display");
+});
+    
+</script>
+    
+    
+    
+
+    
+    
+
+<!-- Twitter Bootstrap -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Material Design for Bootstrap -->
+<script src="dist/js/material.js"></script>
+<script src="dist/js/ripples.min.js"></script>
+<script>
+  $.material.init();
+</script>
+
+
+<!-- Sliders -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/noUiSlider/6.2.0/jquery.nouislider.min.js"></script>
+<script>
+  $(function () {
+    $.material.init();
+    $(".shor").noUiSlider({
+      start: 40,
+      connect: "lower",
+      range: {
+        min: 0,
+        max: 100
+      }
+    });
+
+    $(".svert").noUiSlider({
+      orientation: "vertical",
+      start: 40,
+      connect: "lower",
+      range: {
+        min: 0,
+        max: 100
+      }
+    });
+  });
+</script>
+
+<!-- Dropdown.js -->
+<script src="https://cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,96 @@
+.navbar-inverse{
+    background: -webkit-linear-gradient(#4A4A4A, #2B2B2B); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#4A4A4A, #2B2B2B); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#4A4A4A, #2B2B2B); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#4A4A4A, #2B2B2B);
+    z-index: 100;
+}
+
+.navbar-inverse span{
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+    top:5px;
+}
+
+.navbar-inverse li{
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.navbar-inverse .active{
+    border-bottom: 3px solid #E91E63;
+}
+.navbar-inverse .navbar-right li{
+    padding: 0px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+.navbar-inverse li:hover{
+    border-bottom: 3px solid white;
+    background: rgba(255, 255, 255, 0.1);;
+}
+
+
+.navbar-inverse span[id="mbutton"]{
+    margin-right: 0px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+
+.leftbar{
+    color: #888;
+    top: 0px;
+    position: absolute;
+    z-index: 200;
+}
+
+.plus{
+float: right;
+font-size: 18px;
+}
+
+.mtitle{
+margin-left: 60px;
+}
+
+.mtitle span{
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.blur{
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+    filter: blur(20px);
+    opacity: 0.4;
+}
+
+
+.main{
+    margin-top:80px;
+}
+
+.msg a{
+    padding: 20px;
+
+}
+
+.msgData{
+    float: right;
+    right: 7%;
+}
+
+.msgData a{
+    text-align: inherit;
+    padding: 20px;
+    margin: 0px;
+}
