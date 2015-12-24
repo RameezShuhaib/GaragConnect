@@ -1,0 +1,36 @@
+.page-head {
+    padding: 50px;
+}
+
+
+.card {
+    height: 510px;
+}
+
+.form-continer {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.loginbox {
+    vertical-align: middle;
+}
+
+body {
+    background: url("../images/carbg.jpg");
+}
+
+#intro {
+    margin: 200px;
+    text-align: right;
+    border: 1px solid rgba(82, 37, 11, 0.79);
+    max-width: 800px;
+    padding: 30px;
+    background-color: rgba(206, 248, 137, 0.09);
+    color: antiquewhite;
+    -webkit-filter: blur(6px);
+}
+
+/* blurrshit */
+
+
